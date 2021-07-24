@@ -1,0 +1,2 @@
+# blogz
+tech blog application
