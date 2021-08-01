@@ -1,0 +1,260 @@
+:root {
+    --primary-color: #FE6100;
+    --secondary-color: #009DFF;
+    --white: #fff;
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+html {
+    
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 85vh;
+}
+
+
+header {
+    background-color: var(--primary-color) ;
+    color: var(--white);
+    min-width: 100%;
+    min-height:50px;
+    margin: 0px;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo a {
+    text-decoration: none;
+    border: 0px;
+    color: var(--white);
+}
+
+.logo a:hover {
+    text-decoration: none;
+    border: 0px;
+    color: #f9bb95;
+}
+
+#sign-in-panel {
+    display: flex;
+    margin: 5px;
+    height: 100%;
+    justify-content: space-around;
+    align-self: center;
+}
+
+#sign-in {
+    display: inline-block;
+    padding: 10px;
+    color: var(--white);
+    font-weight: 600;
+    align-self: center;
+}
+
+#register {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--white);
+    align-self: center;
+}
+
+.flex-item {
+    display: block;
+    align-self: center;
+    font-size: large;
+    padding: 5px;
+}
+
+.flex {
+    display: flex;
+}
+
+main {
+    background-color: #f9bb95;
+    margin: 0px;
+    display: flex;
+    flex-flow: column;
+    padding: 15px;
+    min-height:100%;    
+}
+
+.market-container {
+  margin: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px;
+  justify-content: center; 
+  align-content: space-around;
+}
+
+/* Card Styling */
+.card-body {
+  padding: 10px;
+}
+
+.card {
+    background-color: var(--white);
+    margin: 10px;
+    width: 80%;
+    border-radius: 10px;  
+    padding: 0px;
+    align-self: center;
+}
+
+.market-card {
+  background-color: var(--white);
+  margin: 10px;
+  border-radius: 10px;  
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  max-width: 300px;
+}
+
+.card-header{
+  border-radius: 10px 10px 0px 0px;
+  width: 100%;
+  padding: 5px 10px;
+  margin: 0px;
+  color: white;
+  align-self: flex-start;
+  
+}
+
+.card-footer{
+  border-radius: 0px 0px 10px 10px;
+  width: 100%;
+  padding: 15px 10px 5px 10px;
+  margin: 0px;
+  color: #000;
+  background-color:#eee;
+  text-align: center;
+  align-self: flex-end;
+  
+}
+
+.Preserves {
+  background-color: orange;
+}
+
+.Fruit {
+  background-color: red;
+}
+
+.fruits {
+  background-color: red;
+}
+
+.Fruits {
+  background-color: red;
+}
+
+.fruit {
+  background-color: red;
+}
+
+.Vegetables {
+  background-color: green;
+}
+
+.Dishes {
+  background-color: black;
+}
+
+.Seeds {
+  background-color: brown;
+}
+
+.Other {
+  background-color: purple;
+}
+
+.timestamp {
+  margin-top: 15px;
+  font-size: x-small;
+  font-style: italic;
+}
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 15px;
+    margin: 0px;
+}
+
+/* Hide things */
+
+.hidden {
+    visibility: hidden;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Dropdown Button */
+.navbtn {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 14px;
+    margin:10px;
+    font-size: 25px;
+    border: none;
+    border-radius: 50%;
+    border-color: #2e6da4;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right:0;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .navbtn {
+    color: #f9bb95;
+  }
+  
+  .navbtn:hover {
+    color:#f9bb95;
+  }

@@ -1,0 +1,40 @@
+ <h2 class="center"><i class="bi bi-cart-plus"></i> Make An Offer</h2>
+     
+    <div class="card">
+        <div class="card-body">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6 col-sm-12">
+                    <label for="product">What are you offering?</label>
+                    <input type="text" class="form-control" placeholder="Offered Item" id="product">
+                    </div>
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="quantity">How many items do you have to offer?</label>
+                        <input type="number" class="form-control" placeholder="Quantity" id="quantity">
+                    </div>
+                </div>
+                    
+                <div class="form-row">
+                    <label for="type">What category does this item belong to?</label>
+                    <select class="custom-select mr-sm-2" id="type">
+                        <option value="Fruit" selected>Fruits</option>
+                        <option value="Vegetables">Vegetables</option>
+                        <option value="Preserves">Preserves &amp; Non-Perishables</option>
+                        <option value="Seeds">Nuts &amp; Seeds</option>
+                        <option value="Other">Other</option>
+                      </select>
+                </div>
+                
+                <div class="form-row">
+                    <label for="description">Please provide any additional information and pick-up instructions:</label>
+                    <input type="text" class="form-control" placeholder="Describe what you're offering and tell people how they can pick it up." id="description">
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary" id="post">Make Offer</button>
+                </div>
+            </form>
+            </div>
+        </div>
+
+<script src="./js/post-product.js"></script>

@@ -1,0 +1,22 @@
+<h2 class="center"><i class="bi bi-basket"></i> My Pantry</h2>
+    
+<div class="market-container">
+ {{#each pantry as |product|}}
+    <div class="market-card">
+        <div class="card-header {{product.type}}">
+                <h3>{{product.quantity}} of {{product.product}}</h3>
+                <sup><strong>Category:</strong> <em>{{product.type}}</em></sup>
+        </div>
+        <div class="card-body">
+            <input value={{product.id}} class="product_id hidden"></input>
+            <p>{{product.description}}</p>
+        </div>
+            
+        <div class="card-footer">             
+            <button type="button" class="btn btn-danger" id="delete-post"><i class="bi bi-eraser"></i> Delete</button>
+            <p class="timestamp">Posted: {{product.createdAt}}</p>
+        </div>
+        </class>
+    </div>      
+{{/each}}
+</div>

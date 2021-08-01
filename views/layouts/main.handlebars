@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head -->
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Give away your excess food! Instead of letting produce spoil in your kitchen, pay it forward and help out another person in your community."/>
+<!-- Start Style Sheets -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/style.css">
+<!-- End Style Sheets -->
+<!-- Title -->
+<title>Cup O' Sugar</title>
+</head>
+<!-- Body -->
+<body>
+<!-- Header Section -->
+<header>
+    <div id="logo" class="flex-item logo">
+        <a href="/" title="Return to Market">
+            <h1><i class="bi bi-cup"></i> CUP O' SUGAR</h1>
+        </a>
+    </div>
+    <!-- Primary navigation -->
+    <div id="sign-in-panel">
+    <!-- User Profile displays when a session is active -->
+    {{#if logged_in}}
+        <!-- Profile / Sign Out displays when a session is active -->
+        <button class="navbtn" id="get-post-form" title="Make An Offer"><i class="bi bi-cart-plus"></i></button>
+        <a href="/messages"><button class="navbtn" title="Check Messages"><i class="bi bi-mailbox"></i></button></a>
+        <div class="dropdown">
+            <button class="navbtn" id="pantry" title="View Pantry"><i class="bi bi-person-circle"></i></button>
+            <div class="dropdown-content">
+                <a href="/pantry"><i class="bi bi-basket"></i> My Pantry</a>
+                <a href="" id="logout"><i class="bi bi-x-circle"></i> Sign Out</a>
+            </div>
+        </div>
+    <!-- Sign In / Register displays when a session is not active -->
+    {{else}}  
+        <div class="flex-item">
+            <button class="btn btn-primary btn-lg" id="login-start">Log In</button>
+        </div>
+        <div class="flex-item">
+            <button class="btn btn-primary btn-lg" id="register-start">Register</button>
+        </div>
+    {{/if}}
+    </div>
+</header>
+<!-- Main -->
+<main>
+    <!-- Handlebars is rendered here -->    
+    {{{body}}}
+</main>
+<!-- Footer -->
+<footer>
+    <!-- Copyright Info -->
+    <p>Copyright &copy; 2021 Cup O' Sugar LLC.</p>
+</footer>
+<!-- Start Scripts-->
+{{#if logged_in}}
+<script src="./js/product.js"></script>
+<script src="./js/logout.js"></script>
+<script src="./js/navigation.js"></script>
+{{else}}
+<script src="./js/register.js"></script>
+<script src="./js/login-form.js"></script>
+{{/if}}
+<script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+<scrip src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></scrip>
+<scrip src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></scrip>
+<!-- End Scripts-->
+</body>
+</html>
+<!-- That's All Folks! -->
