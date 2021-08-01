@@ -1,0 +1,22 @@
+[
+    {
+        "comment_text": "This is a comment.",
+        "post_id": "1",
+        "user_id": "1"
+    },
+    {
+        "comment_text": "And I have more to say...",
+        "post_id": "1",
+        "user_id": "1"
+    },
+    {
+        "comment_text": "I comment on a lot of things",
+        "post_id": "2",
+        "user_id": "1"
+    },
+    {
+        "comment_text": "Thanks for the comment 1! ",
+        "post_id": "2",
+        "user_id": "2"
+    }
+]

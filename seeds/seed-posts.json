@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Happy Title",
+        "text": "This is the body of the post where all of the information the user would like to convey will be displayed to the end user when the website reaches launch status.",
+        "user_id": "1"
+    },
+    {
+        "title": "My First Post!",
+        "text": "I am so excited to be making this post because it is a very exciting post. It is the first time that I am using this system to make a post. And when I make more posts, this is exactly what they will look like. So, in that way it is very handy to be making this post so that you can see a better approximation of the end product.",
+        "user_id": "2"
+    },    
+    {
+        "title": "Adding my two cents",
+        "text": "If there are going to be 3 users then they should each have a post. For this reason I have decided to throw my 0,02$ into the put so that there can be an addition post to visualize and the other two don't look to be quite so lonely.",
+        "user_id": "3"
+    }
+]
