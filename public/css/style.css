@@ -1,7 +1,7 @@
 :root {
     --primary-color: #FE6100;
     --secondary-color: #009DFF;
-    --white: #fff;
+    --white: #000;
 }
 
 .bg-primary {
